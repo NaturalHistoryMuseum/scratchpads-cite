@@ -108,6 +108,9 @@ class Model {
     }
     $cnx = Application::$conf['database'];
     $db = new mysqli($cnx['host'], $cnx['user'], $cnx['password'], $cnx['database']);
+    if ($db->connect_errno > 0) {
+      throw new Exception("Error while connecting to the database: $db->connect_error");
+    }
     if (!$init) {
       $init = TRUE;
       // Create the schema if it doesn't exist 
@@ -181,7 +184,7 @@ class Model {
     
     $result = $db->query($query);
     if (!$result) {
-      throw new Exception("There was an error running $quey");
+      throw new Exception("There was an error running $query");
     }
     $models = array();
     while ($row = $result->fetch_assoc()) {
