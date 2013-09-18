@@ -1,0 +1,77 @@
+body {
+  background: #EEE;
+  min-width: 960px;
+}
+
+#page {
+  margin: auto;
+  padding: 12px;
+  width: 960px;
+  background: #FFF;
+}
+
+#header {
+  padding-top: 20px;
+}
+
+h1 {
+  font-size: 20pt;
+  font-family: Ubuntu, sans-serif;
+  font-weight: normal;
+  color: black;
+}
+
+h2 {
+  font-size: 18pt;
+  font-family: Ubuntu, sans-serif;
+  font-weight: normal;
+  color: #3D5F27;
+  border-bottom: 1px solid #CCC;
+}
+
+h3 {
+  font-family: Ubuntu, sans-serif;
+  font-size: 14pt;
+  font-weight: normal;
+  color: #000;
+}
+
+table {
+  border: 1px solid #CCC;
+}
+
+td, th {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+}
+
+th {
+  color: #333;
+  background: #F7F7F7;
+}
+
+div.information, div.citation-files, div.citethispage-as {
+  margin-left: 16px;
+}
+
+div.citethispage-as {
+  border: 1px solid #CCC;
+  background: #F7F7F7;
+  padding: 2em;
+}
+
+div.archive-entry {
+  margin-bottom: 64px;
+}
+
+a {
+  color: #3D5F27;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+}
