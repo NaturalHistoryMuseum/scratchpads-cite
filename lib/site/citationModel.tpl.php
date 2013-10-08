@@ -30,8 +30,8 @@
     'Page title' => $title,
     'Site' => $site,
     'Original URL' => $url,
-    'Date of snapshot' => $dateOfSnapshot,
-    'Last modification date (if known)' => $date,
+    'Date of snapshot' => $date,
+    //'Last modification date (if known)' => $date,
     'Author(s)' => $author
   );
   $info_table_r = '<table>';
@@ -79,6 +79,6 @@
   </div>
   <h3>Please cite this page as</h3>
   <div class="citethispage-as">
-    <?php echo "$author ($year) $title. <em>$site</em>. $url"; ?>
+    <?php echo "$author ($year) $title in <em>$site</em>. $genUrl last accessed on $date."; ?>
   </div>
 </div>
