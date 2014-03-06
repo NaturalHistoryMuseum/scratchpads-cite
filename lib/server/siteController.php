@@ -11,6 +11,9 @@ class siteController implements Controller {
    * processRequest
    */
   public function processRequest() {
+    // Just redirect to scratchpads.eu ; remove this to get functionality back.
+    header('Location: http://scratchpads.eu');
+    exit();
     // Gather all citations and theme them
     $citations = citationModel::find();
     $base_url = Application::$conf['base_url'];
