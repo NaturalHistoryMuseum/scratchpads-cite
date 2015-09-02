@@ -134,10 +134,10 @@ class generateController implements Controller {
       ));
       $attempts--;
     } while ($status == Application::EXEC_TIMEOUT && $attempts > 0);
-    if ($status > 0) {
+    if ($status > 0 && !file_exists($gen_filename)) {
       return new PageOutput(array(
         'status' => 0,
-        'error' => 'There was an error generating the PDF document'
+        'error' => 'There was an error generating the PDF document, please try again.'
       ));
     }
     $generated = array(
